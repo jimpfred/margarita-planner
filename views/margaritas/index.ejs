@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Margaritas!</title>
+</head>
+<body>
+    <header>
+        <p>MARGARITA PLANNER</p>
+    </header>
+    <h1>Margarita List</h1>
+    <table>
+        <thead>
+            <th>Margarita Name</th>
+        </thead>
+        <tbody>
+            <% margaritas.forEach(margarita => { %>
+                <tr>
+                    <td><%= margarita.name %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

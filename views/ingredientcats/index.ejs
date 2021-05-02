@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Margaritas!</title>
+</head>
+<body>
+    <header>
+        <p>MARGARITA PLANNER</p>
+    </header>
+    <h1>Ingredient List</h1>
+    <table>
+        <thead>
+            <th>Ingredient Name</th>
+        </thead>
+        <tbody>
+            <% ingredientCats.forEach(ingredientCat => { %>
+                <tr>
+                    <td><%= ingredientCat.name %></td>
+                   <!-- <td><%= ingredientCat._id %></td>  -->
+                    <td><form action="/ingredientcats/<%=ingredientCat._id %>?_method=DELETE" method="POST"><button type="submit">🗑</button></form></td>
+                    <td><form action="/ingredientcats/<%=ingredientCat._id %>/edit"> 
+                    <button type="submit">Modify</button></form></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>
