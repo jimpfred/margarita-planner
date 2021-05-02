@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const margaritaSchema = new Schema({
     name: String,
-    //ingredient: [{type: Schema.Types.ObjectId, ref: 'Ingredient'}]
+    ingredient: [{type: Schema.Types.ObjectId, ref: 'Ingredient'}]
     
 }, { timestamps: true })
 
