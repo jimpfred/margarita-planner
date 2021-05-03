@@ -5,6 +5,7 @@ const Schema = mongoose.Schema
 const margaritaSchema = new Schema({
     name: { type: String, required: true},
     fruit1: {type: String},
+    fruit2: {type: String},
     
     
 }, { timestamps: true })
