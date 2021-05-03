@@ -3,8 +3,9 @@ const Schema = mongoose.Schema
 
 
 const margaritaSchema = new Schema({
-    name: String,
-    ingredient: [{type: Schema.Types.ObjectId, ref: 'Ingredient'}]
+    name: { type: String, required: true},
+    fruit1: {type: String},
+    
     
 }, { timestamps: true })
 

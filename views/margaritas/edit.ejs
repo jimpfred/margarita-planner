@@ -11,12 +11,13 @@
     <header>
         <p>MARGARITA PLANNER</p>
     </header>
-    <h1>Add Your Ingredients from Each Catagory</h1>
-    <form action="/margaritas" method="POST"> <!--to controller, then adds to db-->
-        <label>Margarita Name:
-          <input type="string"  name="name">
+    <h1>Add Ingredients</h1>
+    
+    <form action="/margaritas<%= margarita._id %>?" method="POST"> 
+        <label>Margarita Ingredient:
+          <input type="string"  name="newIngredient">
         </label>
-          <input type="submit" value="Add Margarita">
+          <input type="submit" value="Add Ingredient">
     </form>
 </body>
 </html>

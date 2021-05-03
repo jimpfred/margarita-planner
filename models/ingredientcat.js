@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 
 const ingredientCatSchema = new Schema({
-    name: String,
+    name: { type: String, required: true, unique: true }
 }, { timestamps: true })
 
 
