@@ -9,12 +9,64 @@
 </head>
 <body>
     <header>
-        <p>MARGARITA RECIPE</p>
+        <h3>MARGARITA RECIPE</h3>
     </header>
-  
-    <form action="/margaritas/<%= margarita._id %> method="GET">
-        <input type="name" value="<%= ingredientCat.name %>" name="name">
-        <input type="submit" value="Update Ingredient">
-    </form>
+      <h1><%= margarita.name %></h1>
+      <table>
+      <tbody>
+      <tr>
+      <td>Fruit:</td>
+      <td><%= margarita.fruit1 %></td>
+      <td><%= margarita.fruit1Cups %></td>
+      </tr>
+      <tr>
+        <td>2nd Fruit:</td>
+      <td><%= margarita.fruit2 %></td>
+      <td><%= margarita.fruit2Cups %></td>
+    </tr>
+    <tr>
+        <td>3rd Fruit:</td>
+        <td><%= margarita.fruit3 %></td>
+        <td><%= margarita.fruit3Cups %></td>
+        </tr>
+        <tr>
+            <td>HerbsSpices:</td>
+            <td><%= margarita.herbSpices %></td>
+            <td><%= margarita.herbSpicesTsp %></td>
+         </tr>
+         <tr>
+            <td>Tequila:</td>
+            <td><%= margarita.tequila %></td>
+            <td><%= margarita.tequilaOz %></td>
+         </tr>
+         <tr>
+            <td>Juices:</td>
+            <td><%= margarita.juices %></td>
+            <td><%= margarita.juicesOz %></td>
+         </tr>
+         <tr>
+            <td>Liqueur:</td>
+            <td><%= margarita.liqueur %></td>
+            <td><%= margarita.liqueurOz %></td>
+         </tr>
+         <tr>
+            <td>Salt:</td>
+            <td><%= margarita.salt %></td> 
+         </tr>
+         <tr>
+            <td>Sweetner:</td>
+            <td><%= margarita.sweetener %></td> 
+            <td><%= margarita.sweetenerTsp %></td> 
+         </tr>
+         <tr>
+             <td>Garnish:</td>
+            <td><%= margarita.garnish %></td> 
+         </tr>
+         <tr>
+            <td>Ice Style:</td>
+           <td><%= margarita.ice %></td> 
+        </tr>
+        </tbody>
+    </table>
 </body>
 </html>

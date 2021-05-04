@@ -10,6 +10,6 @@ const margaritasCtrl = require('../controllers/margaritas');
 router.get('/', margaritasCtrl.index)
 router.get('/new', margaritasCtrl.new); 
 router.post('/', margaritasCtrl.create);
-router.get('/new', margaritasCtrl.show); 
+router.get('/:id/show', margaritasCtrl.show); 
 
 module.exports = router;
