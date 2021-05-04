@@ -2,10 +2,13 @@
 const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
-const port = 3000
+const port = process.env.PORT || 3000;
 const indexRouter = require('./routes/index');
 const ingredientCatsRouter = require('./routes/ingredientcats');
 const margaritasRouter = require('./routes/margaritas');
+
+//load dnv variables
+require('dotenv').config();
 
 // initialize the express app
 const app = express();

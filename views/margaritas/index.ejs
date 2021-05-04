@@ -20,7 +20,8 @@
             <% margaritas.forEach(margarita => { %>
                 <tr>
                     <td><%= margarita.name %></td>
-                    <td><a href="/margaritas/<%= margaritas._id %>/"><button>Add Fruits</button></a></td>
+                    <td><%= margarita._id %></td>
+                    <td><a href="/margaritas/<%= margaritas._id %>/show"><button>See Recipe</button></a></td>
                 </tr>
             <% }) %>
         </tbody>

@@ -4,6 +4,7 @@ module.exports = {
     new: newMargarita,     //new is a keyword, cannot use it later for function or variable names
     create,
     index,
+    show,
 };
 
 function newMargarita(req, res) {
@@ -22,4 +23,9 @@ function index(req, res) {                                              // grabs
     Margarita.find({}, function(err, margaritas) {
         res.render('margaritas/index', { margaritas });    // in brackets context object taken from line above, no change to route
     });
+}
+function show(req, res) {
+    Margarita.findById(req.params.id, function(err, margarita) {
+        res.render('margaritas/show', { margarita })
+    })
 }
