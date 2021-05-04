@@ -12,7 +12,13 @@
 
 ## Screenshots
 
-![](/screenshot7.jpg)
+![](/screen-shot-1.png)
+![](/screen-shot-2.png)
+![](/screen-shot-3.png)
+![](/screen-shot-5.png)
+![](/screenshot-6.png)
+![](/screenshot-7.png)
+
 
 ## Gettig Started
 
